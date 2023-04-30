@@ -1,0 +1,11 @@
+.bg-darkblue {
+    background-color: #0a1524;
+}
+
+.navbar-nav .nav-link.active {
+    color: #a42c2c !important;
+}
+
+.navbar {
+    min-height: 65px;
+}
