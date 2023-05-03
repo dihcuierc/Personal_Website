@@ -1,0 +1,43 @@
+.goals {
+    background-color: rgba(0,0,0,0.75) !important;
+    width: auto;
+    min-height: 415px !important;
+    border-radius: 20px !important;
+}
+
+.dashboard {
+    min-height: 300px !important;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 20px !important;
+    width: 700px;
+}
+
+.schedule {
+    max-width: 800px;
+    min-width: 200px !important;
+    height: 100vh;
+    padding: 1.5rem;
+    margin-left: 50px;
+    border-radius: 20px !important;
+    justify-content: center;
+    border: transparent;
+}
+
+.exercise {
+    margin-top: 20px;
+    background-color:blanchedalmond;
+    border: 2px solid black;
+    width: 50%;
+    align-items: center;
+}
+
+.home {
+    border: 2px solid black;
+    height: 50vh;
+    width: 90vh;
+    padding-left: 30px;
+    justify-content: center;
+    border-radius: 20px;
+}

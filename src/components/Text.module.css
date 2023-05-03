@@ -1,0 +1,34 @@
+.hoverline {
+    text-decoration: none;
+    color: #1c1d1f;
+}
+
+.hoverline:hover {
+    text-decoration: underline;
+}
+
+.target {
+    color: #56AF55;
+    font-weight: 500;
+}
+
+.currentValue {
+    color: #EFAB4A;
+    font-weight: 500;
+}
+
+.targetDate {
+    color: white;
+}
+
+.goal_title{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.dashboard_title{
+    font-weight: 500 !important;
+    font-size: 2rem !important;
+    color: white;
+
+}

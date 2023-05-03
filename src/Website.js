@@ -1,11 +1,9 @@
-import Navbar from './components/Navbar';
-import Home from './components/Home'
+import ColorSchemesExample from './components/Navbar';
 
 export default function Main() {
   return (
     <div className="Main">
-      <Navbar/>
-       
+      <ColorSchemesExample/>
     </div>
   );
 }
