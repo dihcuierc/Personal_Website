@@ -1,6 +1,6 @@
 {
     "1": {
-      "title": "Coding_Pidgeons__SC2006 Project",
+      "title": "Coding Pidgeons SC2006 Project",
       "subtitle": "Reactjs",
       "description":
         "The platform is a full-stack web application that allows people to easy manage and plan their exercise activities, find the nearest exercise and food facility",
@@ -18,7 +18,7 @@
       "alt": "SC2002-MOBLIMA"
     },
     "3":{
-      "title": "Game_Analysis_SC1015 Project",
+      "title": "Game Analysis SC1015 Project",
       "subtitle": "Python Pandas",
       "description":
         "Data Science project to find the relationship between Game Sales price with many factors such as Genre, Age-Rating, Year of release etc",
@@ -28,7 +28,7 @@
     },
     
     "4":{
-      "title": "Decoder_Tool",
+      "title": "Decoder Tool",
       "subtitle": "Python",
       "description":
         "Decoder Tool is an application to faciliate the translation of car error reports to a human readable data format for faster processing of error reports",

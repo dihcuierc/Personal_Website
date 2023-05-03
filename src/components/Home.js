@@ -8,11 +8,19 @@ import email from "./img/email.svg"
 import Image from "react-bootstrap/Image";
 import cardStyle from "./Card.module.css"
 import profile from "./img/bitmoji.png"
+import toast, { Toaster } from "react-hot-toast";
+import { useCallback } from "react";
 
 export default function Home() {
+    const success = useCallback(() => {
+        toast.success("Email copied to clipboard!");
+
+    },[]);
     return (
+        
         <div className='Home'>
-           <Container className="h-100 d-grid align-content-center">
+            <Toaster/>
+            <Container className="h-100 d-grid align-content-center">
                 <Row className="p-0">
                     <Col className='align-content-center' > 
                         <Card className={`${cardStyle.schedule}`}>
@@ -32,7 +40,9 @@ export default function Home() {
                                             onClick={(event) => {
                                                 event.preventDefault();
                                                 navigator.clipboard.writeText('leyefoer@gmail.com');
-                                                alert('Email copied to clipboard!');
+                                                
+                                                    success();
+                                                
                                                 }} style={{marginLeft: "20px"}}>
                                             <Image fluid src={email} alt="Email"></Image>
                                         </a>

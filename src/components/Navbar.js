@@ -12,9 +12,9 @@ export default function ColorSchemesExample() {
         <Container>
           <Navbar.Brand href="/">Ernest</Navbar.Brand>
           <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#home" style={{color:"white", fontSize:"20px", padding:"10px"}}>Home</Nav.Link>
+            <Nav.Link href="#about" style={{color:"white", fontSize:"20px", padding:"10px"}}>About</Nav.Link>
+            <Nav.Link href="#projects" style={{color:"white", fontSize:"20px", padding:"10px"}}>Projects</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
