@@ -1,11 +1,9 @@
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card"
 import textStyle from "./Text.module.css"
 import cardStyle from "./Card.module.css"
 import Image from "react-bootstrap/Image";
-
+ 
 import React from "react";
 
 
@@ -17,7 +15,7 @@ export default function Projects() {
       "subtitle": "Reactjs",
       "description":
         "The platform is a full-stack web application that allows people to easy manage and plan their exercise activities, find the nearest exercise and food facility",
-      "image": "/img/Coding_Pidgeons__SC2006.png",
+      "image": "./img/github.svg",
       "link": "https://github.com/dihcuierc/Coding_Pidgeons__SC2006",
       "alt": "Coding_Pidgeons__SC2006"
     },
@@ -57,7 +55,6 @@ export default function Projects() {
             <Card.Title className={textStyle.dashboard_title}>
               Projects I've Done
             </Card.Title>
-            
             <Card.Body className="flex flex-wrap -m-4 container px-5 py-10 mx-auto text-center lg:px-40">
               {Object.values(projectData).map((project) => (
                 <a style={{color:"white"}}

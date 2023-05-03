@@ -4,7 +4,8 @@ import Card from "react-bootstrap/Card"
 import textStyle from "./Text.module.css"
 import cardStyle from "./Card.module.css"
 import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import HandymanIcon from '@mui/icons-material/Handyman';
+import Image from "react-bootstrap/Image";
 
 import React from "react";
 
@@ -16,10 +17,9 @@ export default function About() {
         <div className='About'>
             <Container className="h-100 d-grid justify-content-center" style={{paddingTop: '50px'}}>
                 <Card className={`${cardStyle.dashboard} bg-dark opacity-75`} text='white'>
-                    <Card.Title className={textStyle.dashboard_title}>About me
-</Card.Title>
+                    <Card.Title className={textStyle.dashboard_title}>About me</Card.Title>
                     <Card.Body className="justify-content-center">
-                        <p >
+                        <p>
                             Hello, I am Lee Yen Foong Ernest, Year 2 Computer Science at Nanyang Technological Univeristy. I am aspiring to be a Software Engineer in the future. I am constantly on the look out for more challenges to push myself to greater heights and to expand my horizon. 
                         </p>
                         <p > 
@@ -28,17 +28,16 @@ export default function About() {
                     </Card.Body>
                     
 
-                    <Card.Title className={textStyle.dashboard_title}> Skills &amp; Technologies
-</Card.Title>
-                    <Card.Body className="d-flex justify-content-left">
-                      
+                    <Card.Title className={textStyle.dashboard_title}>
+                        Skills &amp; Technologies                   
+                        <HandymanIcon />
+                    </Card.Title>
+                    <Card.Body className="justify-content-center">
                       <Col>
                           {skills.map((skill) => (
-                            <Row>
+                            <p>
                                 {skill}
-                            </Row>
-                                
-                           
+                            </p>
                           ))}
                        
                        </Col>

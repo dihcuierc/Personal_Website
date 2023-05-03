@@ -7,41 +7,49 @@ import github from "./img/github.svg"
 import email from "./img/email.svg"
 import Image from "react-bootstrap/Image";
 import cardStyle from "./Card.module.css"
+import profile from "./img/bitmoji.png"
 
 export default function Home() {
     return (
         <div className='Home'>
-           <Container className="h-100 d-grid align-content-center ">
+           <Container className="h-100 d-grid align-content-center">
                 <Row className="p-0">
-                    <Col className='align-content-center'> 
+                    <Col className='align-content-center' > 
                         <Card className={`${cardStyle.schedule}`}>
                             <Card className={`${cardStyle.home}`}>
-                            <h1>Hi, I am Ernest</h1>
-                            <h2>NTU Y2 Computer Science</h2>
-                            <Card className={`${cardStyle.exercise}`}>
-                                <Col>
-                                    <a href="https://www.linkedin.com/in/ernest-lee-26a599220/">
-                                        <Image fluid src={linkedin} alt="LinkedIn"></Image>
-                                    </a>
-                                    <a href="https://github.com/dihcuierc">
-                                        <Image fluid src={github} alt="Github"></Image>
-                                    </a>
-                                    <a href="mailto:leyefoer@gmail.com" 
-                                        onClick={(event) => {
-                                            event.preventDefault();
-                                            navigator.clipboard.writeText('leyefoer@gmail.com');
-                                            alert('Email copied to clipboard!');
-                                            }}>
-                                        <Image fluid src={email} alt="Email"></Image>
-                                    </a>
-                                </Col>
+                                <h1>Hi, I am Ernest</h1>
+                                <h2>NTU Y2 Computer Science</h2>
+                                <Card className={`${cardStyle.exercise}`}>
+                                    <Col>
+                                        <a href="https://www.linkedin.com/in/ernest-lee-26a599220/" style={{marginRight: "20px"}}>
+                                            <Image fluid src={linkedin} alt="LinkedIn"></Image>
+                                            
+                                        </a>
+                                        <a href="https://github.com/dihcuierc">
+                                            <Image fluid src={github} alt="Github"></Image>
+                                        </a>
+                                        <a href="mailto:leyefoer@gmail.com" 
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                navigator.clipboard.writeText('leyefoer@gmail.com');
+                                                alert('Email copied to clipboard!');
+                                                }} style={{marginLeft: "20px"}}>
+                                            <Image fluid src={email} alt="Email"></Image>
+                                        </a>
+                                    </Col>
                                 </Card>
                             </Card>
                         </Card>
                     </Col>
                     <Col className='align-content-center'> 
                         <Card className={`${cardStyle.schedule}`}>
-                            <h1>img</h1>
+                        <Image
+                            className="me-3"
+                            src={profile}
+                            alt="Profile Image"
+                            fluid
+                            style={{ width: "40vh", border: "10px solid orange", borderRadius: "200px"}}
+                        />
                         </Card>
                     </Col>
 
