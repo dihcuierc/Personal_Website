@@ -3,8 +3,6 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card"
 import textStyle from "./Text.module.css"
 import cardStyle from "./Card.module.css"
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 import HandymanIcon from '@mui/icons-material/Handyman';
 import InfoIcon from '@mui/icons-material/Info';
 
@@ -31,23 +29,18 @@ export default function About() {
                             Outside of my studies, I also enjoy to exercise. I like to run and play floorball as a means of enjoyment and to always remain active. 
                         </p>
                     </Card.Body>
-                    
 
                     <Card.Title className={textStyle.dashboard_title}>
                         Skills &amp; Technologies         
                         <HandymanIcon fontSize="large" style={{marginLeft:"10px"}}/>
                     </Card.Title>
                     <Card.Body className="justify-content-center">
-                      <Col>
-                          {skills.map((skill) => (
-                            <Row>
-                                {skill}
-                            </Row>
-                          ))}
-                       </Col>
+                        <ul>
+                        {skills.map((skill) => (
+                            <li key={skill}>{skill}</li>
+                        ))}
+                        </ul>
                     </Card.Body>
-                    
-                  
                 </Card>
             </Container>
         </div>
