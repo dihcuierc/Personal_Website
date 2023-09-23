@@ -1,39 +1,44 @@
 {
-    "1": {
-      "title": "Coding Pidgeons SC2006 Project",
-      "subtitle": "Reactjs",
-      "description":
-        "The platform is a full-stack web application that allows people to easy manage and plan their exercise activities, find the nearest exercise and food facility",
-      "image": "./img/Coding_Pidgeons__SC2006.png",
-      "link": "https://github.com/dihcuierc/Coding_Pidgeons__SC2006",
-      "alt": "Coding_Pidgeons__SC2006"
-    },
-    "2": {
-      "title": "SC2002-MOBLIMA Project",
-      "subtitle": "Java",
-      "description":
-        "MOBLIMA is an application to computerize the processes of making online booking and purchase of movie tickets, listing of movies and sale reporting.",
-      "image": "./project-2.gif",
-      "link": "https://github.com/dihcuierc/SC2002-MOBLIMA",
-      "alt": "SC2002-MOBLIMA"
-    },
-    "3":{
-      "title": "Game Analysis SC1015 Project",
-      "subtitle": "Python Pandas",
-      "description":
-        "Data Science project to find the relationship between Game Sales price with many factors such as Genre, Age-Rating, Year of release etc",
-      "image": "../src/img/Game_Analysis.png",
-      "link": "https://github.com/dihcuierc/Game_Analysis",
-      "alt": "Game_Analysis"
-    },
-    
-    "4":{
-      "title": "Decoder Tool",
-      "subtitle": "Python",
-      "description":
-        "Decoder Tool is an application to faciliate the translation of car error reports to a human readable data format for faster processing of error reports",
-      "image": "./img/Game_Analysis.png",
-      "link": "https://github.com/dihcuierc/Decoder_Tool",
-      "alt": "Decoder_Tool"
-    }
+  "1": {
+    "title": "Coding Pidgeons SC2006 Project",
+    "subtitle": "Reactjs",
+    "description": "The platform is a full-stack web application that allows people to easy manage and plan their exercise activities, find the nearest exercise and food facility",
+    "image": "/assets/CodingPigeonsSC2006.jpg",
+    "link": "https://github.com/dihcuierc/Coding_Pidgeons__SC2006",
+    "alt": "Coding_Pidgeons__SC2006"
+  },
+  "2": {
+    "title": "SC2002-MOBLIMA Project",
+    "subtitle": "Java",
+    "description": "MOBLIMA is an application to computerize the processes of making online booking and purchase of movie tickets, listing of movies and sale reporting.",
+    "image": "/assets/project-2.gif",
+    "link": "https://github.com/dihcuierc/SC2002-MOBLIMA",
+    "alt": "SC2002-MOBLIMA"
+  },
+  "3": {
+    "title": "Game Analysis SC1015 Project",
+    "subtitle": "Python Pandas",
+    "description": "Data Science project to find the relationship between Game Sales price with many factors such as Genre, Age-Rating, Year of release etc",
+    "image": "/assets/GameAnalysis.png",
+    "link": "https://github.com/dihcuierc/Game_Analysis",
+    "alt": "Game_Analysis"
+  },
+
+  "4": {
+    "title": "Decoder Tool",
+    "subtitle": "Python",
+    "description": "Decoder Tool is an application to faciliate the translation of car error reports to a human readable data format for faster processing of error reports",
+    "image": "/assets/Decoder_Tool.jpg",
+    "link": "https://github.com/dihcuierc/Decoder_Tool",
+    "alt": "Decoder_Tool"
+  },
+
+  "5": {
+    "title": "Student Engagement Prediction WIP",
+    "subtitle": "PyTorch",
+    "description": "Decoder Tool is an application to faciliate the translation of car error reports to a human readable data format for faster processing of error reports",
+    "image": "/assets/StudentEngagement.jpg",
+    "link": "https://github.com/dihcuierc/Decoder_Tool",
+    "alt": "Decoder_Tool"
+  }
 }

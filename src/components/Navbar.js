@@ -1,32 +1,55 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import classes from "./NavBar.module.css";
+import { useState } from "react";
 
-export default function ColorSchemesExample() {
+export default function NavBar() {
+  const [active, setActive] = useState("home");
+  const handleLinkClick = (section) => {
+    setActive(section);
+  };
+
   return (
-    <>
-      <Navbar bg="dark" variant="dark" sticky="top" >
-        <Container>
-          <Navbar.Brand href="/">Ernest</Navbar.Brand>
-          <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="#home" style={{color:"white", fontSize:"20px", padding:"10px"}}>Home</Nav.Link>
-            <Nav.Link href="#about" style={{color:"white", fontSize:"20px", padding:"10px"}}>About</Nav.Link>
-            <Nav.Link href="#projects" style={{color:"white", fontSize:"20px", padding:"10px"}}>Projects</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <section id="home">
-        <Home />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-    </>
+    <Navbar bg="dark" variant="dark" sticky="top">
+      <Container>
+        <Navbar.Brand
+          href="#home"
+          className={classes.header}
+          onClick={() => handleLinkClick("home")}
+        >
+          Ernest
+        </Navbar.Brand>
+        <Nav>
+          <Nav.Link
+            href="#home"
+            className={`${classes.content} ${
+              active === "home" ? classes.active : ""
+            }`}
+            onClick={() => handleLinkClick("home")}
+          >
+            Home
+          </Nav.Link>
+          <Nav.Link
+            href="#about"
+            className={`${classes.content} ${
+              active === "about" ? classes.active : ""
+            }`}
+            onClick={() => handleLinkClick("about")}
+          >
+            About
+          </Nav.Link>
+          <Nav.Link
+            href="#projects"
+            className={`${classes.content} ${
+              active === "projects" ? classes.active : ""
+            }`}
+            onClick={() => handleLinkClick("projects")}
+          >
+            Projects
+          </Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
   );
 }

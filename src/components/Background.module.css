@@ -1,6 +1,5 @@
-.default {
-    background: url("./img/background.jpg") no-repeat center center ;
-    
-    background-size: cover;
-    min-height: calc(100vh - 65px);;
+.main {
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: calc(100vh - 65px);
 }
