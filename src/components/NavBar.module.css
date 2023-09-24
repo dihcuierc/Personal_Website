@@ -1,3 +1,9 @@
+.navbar {
+  background-color: #000000; /* Background color for the Navbar */
+  color: white; /* Text color */
+  padding: 10px 0; /* Padding at the top and bottom */
+}
+
 .header {
   font-size: 24px;
   font-weight: bold;
@@ -12,7 +18,6 @@
   margin-right: 20px;
 }
 
-.active {
-  border: 4px solid white;
-  border-radius: 10px; /* Set the color for the active link */
+.content:hover {
+  text-decoration: underline;
 }

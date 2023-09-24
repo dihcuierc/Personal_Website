@@ -1,74 +1,68 @@
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import classes from "./Card.module.css";
+import toast, { Toaster } from "react-hot-toast";
+import { useCallback } from "react";
+import { Image } from "react-bootstrap";
+
 import linkedin from "../images/linkedin.svg";
 import github from "../images/github.svg";
 import email from "../images/email.svg";
-import Image from "react-bootstrap/Image";
-import classes from "./Card.module.css";
-import profile from "../images/bitmoji.png";
-import toast, { Toaster } from "react-hot-toast";
-import { useCallback } from "react";
+import profilepic from "../images/profilepic.jpg";
 
 export default function Home() {
   const success = useCallback(() => {
     toast.success("Email copied to clipboard!");
   }, []);
+
   return (
-    <div className="Home">
+    <div className={classes.homepage}>
       <Toaster />
-      <Container className="h-100 d-grid align-content-center">
-        <Row className="p-0">
-          <Col className="align-content-center">
-            <Card className={classes.schedule}>
-              <Card className={classes.home}>
-                <h1>Hi, I am Ernest</h1>
-                <h2>NTU Y2 Computer Science</h2>
-                <Card className={classes.exercise}>
-                  <Col>
-                    <a
-                      href="https://www.linkedin.com/in/ernest-lee-26a599220/"
-                      style={{ marginRight: "20px" }}
-                    >
-                      <Image fluid src={linkedin} alt="LinkedIn"></Image>
-                    </a>
-                    <a href="https://github.com/dihcuierc">
-                      <Image fluid src={github} alt="Github"></Image>
-                    </a>
-                    <a
-                      href="mailto:leyefoer@gmail.com"
-                      onClick={(event) => {
-                        event.preventDefault();
-                        navigator.clipboard.writeText("leyefoer@gmail.com");
-                        success();
-                      }}
-                      style={{ marginLeft: "20px" }}
-                    >
-                      <Image fluid src={email} alt="Email"></Image>
-                    </a>
-                  </Col>
-                </Card>
+      <Row className="gx-0">
+        <Col>
+          <Card className={classes.section}>
+            <Card className={classes.home}>
+              <h1>Hi, I am Ernest Lee</h1>
+              <h2>NTU Y3 Computer Science</h2>
+              <Card className={classes.websitelinks}>
+                <Col>
+                  <a href="https://www.linkedin.com/in/ernest-lee-26a599220/">
+                    <Image fluid="true" src={linkedin} alt="LinkedIn" />
+                  </a>
+                  <a href="https://github.com/dihcuierc">
+                    <Image fluid="true" src={github} alt="Github" />
+                  </a>
+                  <a
+                    href="mailto:leyefoer@gmail.com"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      navigator.clipboard.writeText("leyefoer@gmail.com");
+                      success();
+                    }}
+                  >
+                    <Image fluid="true" src={email} alt="Email" />
+                  </a>
+                </Col>
               </Card>
             </Card>
-          </Col>
-          <Col className="align-content-center">
-            <Card className={classes.schedule}>
-              <Image
-                className="me-3"
-                src={profile}
-                alt="Profile Image"
-                fluid
-                style={{
-                  width: "40vh",
-                  border: "10px solid orange",
-                  borderRadius: "200px",
-                }}
-              />
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+          </Card>
+        </Col>
+        <Col className="align-content-center">
+          <Card className={classes.section}>
+            <Image
+              src={profilepic}
+              alt="Profile Image"
+              fluid="true"
+              style={{
+                width: "40vh",
+                border: "10px solid orange",
+                borderRadius: "20px",
+              }}
+            />
+          </Card>
+        </Col>
+      </Row>
     </div>
   );
 }

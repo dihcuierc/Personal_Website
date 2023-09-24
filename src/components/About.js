@@ -1,67 +1,65 @@
-import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import classes from "./Card.module.css";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import InfoIcon from "@mui/icons-material/Info";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import about from "./About.module.css";
+import Container from "react-bootstrap/Container";
 
 export default function About() {
   const skills = [
-    "Python",
-    "C",
-    "C++",
+    "Python, Pandas, PyTorch",
+    "C, C++",
     "Java",
-    "HTML",
-    "JavaScript",
-    "CSS",
-    "Reactjs",
-    "SQL",
-    "NoSQL",
+    "HTML, JavaScript, CSS, Reactjs",
+    "SQL, NoSQL",
   ];
 
   return (
-    <div className="About">
-      <Container
-        className="h-100 d-grid justify-content-center"
-        style={{ paddingTop: "50px" }}
-      >
-        <Card
-          className={`${classes.dashboard} bg-dark opacity-75`}
-          text="white"
-        >
-          <Card.Title className={classes.dashboard_title}>
-            About me
-            <InfoIcon fontSize="large" style={{ marginLeft: "10px" }} />
-          </Card.Title>
-          <Card.Body className="justify-content-center">
-            <p>
-              Hello, I am Lee Yen Foong Ernest, Year 2 Computer Science at
-              Nanyang Technological Univeristy. I am aspiring to be a Software
-              Engineer in the future. I am constantly on the look out for more
-              challenges to push myself to greater heights and to expand my
-              horizon.
-            </p>
-            <p>
-              Outside of my studies, I also enjoy to exercise. I like to run and
-              play floorball as a means of enjoyment and to always remain
-              active.
-            </p>
-          </Card.Body>
-
-          <Card.Title className={classes.dashboard_title}>
-            Skills &amp; Technologies
-            <HandymanIcon fontSize="large" style={{ marginLeft: "10px" }} />
-          </Card.Title>
-          <Card.Body className="justify-content-center">
-            <Col>
-              {skills.map((skill) => (
-                <Row key={skill}>{skill}</Row>
-              ))}
-            </Col>
-          </Card.Body>
-        </Card>
-      </Container>
+    <div className={classes.card}>
+      <Card className={about.aboutBoard}>
+        <Card.Title className={classes.contentTitle}>
+          About me <InfoIcon fontSize="large" />
+        </Card.Title>
+        <Card.Body className={about.aboutText}>
+          <p>
+            Hello, I am Lee Yen Foong Ernest, currently in my third year of
+            studying Computer Science at Nanyang Technological University. My
+            journey in the world of technology has been an exciting one, and I
+            am filled with enthusiasm and determination to become a Software
+            Engineer in the future.
+          </p>
+          <p>
+            In the rapidly evolving field of computer science, I see each day as
+            an opportunity to learn and grow. I thrive on challenges that test
+            my problem-solving abilities, and I actively seek out projects and
+            experiences that push me to greater heights. Whether it's diving
+            into a complex coding challenge or exploring innovative
+            technologies, I am always eager to expand my horizons and stay at
+            the forefront of the tech industry.
+          </p>
+          <p>
+            Beyond the realm of code and algorithms, I lead an active lifestyle.
+            I find immense joy in activities that keep me physically engaged.
+            Running is not just a form of exercise for me; it's a source of
+            inspiration and a way to clear my mind. Additionally, I have a
+            passion for playing floorball.
+          </p>
+        </Card.Body>
+        <Card.Title className={classes.contentTitle}>
+          Skills &amp; Technologies <HandymanIcon fontSize="large" />
+        </Card.Title>
+        <Container fluid className="gx-0">
+          <Row className="gx-0" xs={2}>
+            {skills.map((skill) => (
+              <Col key={skill}>
+                <div className={about.skills}>{skill}</div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </Card>
     </div>
   );
 }

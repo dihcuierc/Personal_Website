@@ -1,0 +1,30 @@
+.aboutBoard {
+  background: linear-gradient(to bottom, #002752, #610000);
+  min-height: 300px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 60%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  background-color: #6600ff;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aboutText {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
