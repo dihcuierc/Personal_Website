@@ -1,10 +1,9 @@
 import Card from "react-bootstrap/Card";
-import classes from "./Card.module.css";
 import HandymanIcon from "@mui/icons-material/Handyman";
 import InfoIcon from "@mui/icons-material/Info";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import about from "./About.module.css";
+import classes from "./About.module.css";
 import Container from "react-bootstrap/Container";
 
 export default function About() {
@@ -18,11 +17,11 @@ export default function About() {
 
   return (
     <div className={classes.card}>
-      <Card className={about.aboutBoard}>
+      <Card className={classes.aboutBoard}>
         <Card.Title className={classes.contentTitle}>
           About me <InfoIcon fontSize="large" />
         </Card.Title>
-        <Card.Body className={about.aboutText}>
+        <Card.Body className={classes.aboutText}>
           <p>
             Hello, I am Lee Yen Foong Ernest, currently in my third year of
             studying Computer Science at Nanyang Technological University. My
@@ -54,7 +53,7 @@ export default function About() {
           <Row className="gx-0" xs={2}>
             {skills.map((skill) => (
               <Col key={skill}>
-                <div className={about.skills}>{skill}</div>
+                <div className={classes.skills}>{skill}</div>
               </Col>
             ))}
           </Row>

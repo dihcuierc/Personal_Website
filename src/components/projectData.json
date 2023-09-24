@@ -29,13 +29,13 @@
   },
   "5": {
     "title": "To-Do List",
-    "description": "Todo list allows users to input things that they would have to do in their lives.",
+    "description": "Todo list allows users to input things that they would have to do in their lives. Features include Priority level, Category type, Search bar, Sort and Filter functionalities.",
     "image": "/assets/ToDoList.jpg",
     "link": "https://github.com/dihcuierc/To-Do-List",
     "alt": "Todo List Image"
   },
   "6": {
     "title": "Student Engagement Prediction (WIP) AStar",
-    "description": "Predicting student engagement in an online virtual environment."
+    "description": "Creating a model that is able to detect student's engagement level in an online virtual environment (eg zoom). It would better facilitate student's learning especially in modern societies where most lectures and lessons are held online"
   }
 }

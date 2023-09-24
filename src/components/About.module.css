@@ -1,3 +1,14 @@
+.card {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.contentTitle {
+  font-size: 2rem;
+  color: white;
+}
+
 .aboutBoard {
   background: linear-gradient(to bottom, #002752, #610000);
   min-height: 300px;
@@ -11,6 +22,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.aboutText {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 .skills {
   background-color: #6600ff;
   color: white;
@@ -21,10 +38,4 @@
   font-size: 16px;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.aboutText {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
 }

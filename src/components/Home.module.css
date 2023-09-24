@@ -1,0 +1,28 @@
+.section {
+  height: 100vh;
+  padding: 1.5rem;
+  margin-left: 50px;
+  border-radius: 20px;
+  justify-content: center;
+  border: transparent;
+  background-color: transparent;
+}
+
+.home {
+  border: 2px solid black;
+  background: url("../images/wave.gif") no-repeat center center;
+  color: white;
+  justify-content: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+.websitelinks {
+  margin-top: 20px;
+  background-color: blanchedalmond;
+  border: 2px solid rgb(0, 0, 0);
+  width: 50%;
+  padding: 10px;
+  align-items: center;
+  margin: 5%;
+}

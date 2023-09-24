@@ -1,10 +1,10 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import classes from "./Card.module.css";
 import toast, { Toaster } from "react-hot-toast";
 import { useCallback } from "react";
 import { Image } from "react-bootstrap";
+import classes from "./Home.module.css";
 
 import linkedin from "../images/linkedin.svg";
 import github from "../images/github.svg";
@@ -17,14 +17,16 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={classes.homepage}>
+    <div>
       <Toaster />
       <Row className="gx-0">
         <Col>
           <Card className={classes.section}>
             <Card className={classes.home}>
-              <h1>Hi, I am Ernest Lee</h1>
-              <h2>NTU Y3 Computer Science</h2>
+              <div>
+                <h1>Hi, I am Ernest Lee</h1>
+                <h2>NTU Y3 Computer Science</h2>
+              </div>
               <Card className={classes.websitelinks}>
                 <Col>
                   <a href="https://www.linkedin.com/in/ernest-lee-26a599220/">
@@ -55,7 +57,7 @@ export default function Home() {
               alt="Profile Image"
               fluid="true"
               style={{
-                width: "40vh",
+                width: "60%",
                 border: "10px solid orange",
                 borderRadius: "20px",
               }}
