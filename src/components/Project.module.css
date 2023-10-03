@@ -1,0 +1,39 @@
+.card {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 10px;
+  margin: 5%;
+  transition: transform 0.2s;
+  height: 80%;
+  width: 80%;
+  align-items: center;
+}
+
+.title {
+  text-decoration: underline;
+  margin: 5px;
+}
+
+.content {
+  width: 50%;
+}
+
+li {
+  margin-top: 5px;
+}
+
+.image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.conclusion {
+  margin-left: 20px;
+  margin-top: 10px;
+}

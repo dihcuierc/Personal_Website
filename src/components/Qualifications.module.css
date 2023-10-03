@@ -1,0 +1,38 @@
+.qualificationsBoard {
+  background: linear-gradient(to bottom, #440052, rgb(8, 56, 88));
+  min-height: 300px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.awards {
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(255, 1, 255, 0.3);
+  flex-wrap: 200;
+}
+
+.intern {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  box-shadow: 0 8px 16px #155fae;
+}
+
+.title,
+.company {
+  text-align: center;
+  font-weight: bold;
+}

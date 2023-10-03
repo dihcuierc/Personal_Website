@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <div>
       <Toaster />
+
       <Row className="gx-0">
         <Col>
           <Card className={classes.section}>
@@ -29,10 +30,18 @@ export default function Home() {
               </div>
               <Card className={classes.websitelinks}>
                 <Col>
-                  <a href="https://www.linkedin.com/in/ernest-lee-26a599220/">
+                  <a
+                    href="https://www.linkedin.com/in/ernest-lee-26a599220/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image fluid="true" src={linkedin} alt="LinkedIn" />
                   </a>
-                  <a href="https://github.com/dihcuierc">
+                  <a
+                    href="https://github.com/dihcuierc"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image fluid="true" src={github} alt="Github" />
                   </a>
                   <a

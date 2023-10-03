@@ -1,0 +1,11 @@
+.main {
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: calc(100% - 65px);
+}
+
+.project {
+  background: url("../images/projectBackground.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: calc(100% - 65px);
+}

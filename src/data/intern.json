@@ -1,0 +1,25 @@
+{
+  "1": {
+    "Title": "Machine Learning Research Intern",
+    "Company": "A*STAR I2R",
+    "Description": [
+      "Collaborated with team of researchers to proficiently operate advanced laboratory equipment, ensuring seamless experiments",
+      "Performed intensive research on the State-of-the-Art machine learning models available in the market, understanding the concepts used and rationale behind certain methods",
+      "Created baseline model with benchmark accuracy on the prediction of human emotions using PyTorch, demonstrating effective use of research and concepts learnt",
+      "Understanding various neural network architectures, optimised model and further improved prediction accuracy",
+      "Utilised human emotion prediction model to predict student's engagement rate in an online classroom environment, pioneered the first machine learning model to predict student's engagement"
+    ],
+    "Date": "July 2023 - Present"
+  },
+  "2": {
+    "Title": "Software Engineer Intern",
+    "Company": "Continental AG",
+    "Description": [
+      "Experienced working in an office environment, understood Agile scrum methodology and the use of Jira for everyday tracking of work progress",
+      "Developed software tools for automation to reduce time wasted on tedious work and made amendments based on customer's feedback",
+      "Experienced the Software development lifecycle stages when creating software for customers",
+      "Collaborated with colleagues on Gerrit and Code-collaborators for code sharing and reviews"
+    ],
+    "Date": "Apr 2022 - Jul 2022"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "1": {
+    "nav": "GameAnalysis",
+    "title": "Game Analysis",
+    "about": "Data Science project to find the relationship between Game Sales price with many factors such as Genre, Age-Rating, Year of release etc. This project is a module taken in NTU: SC1015 Introduction to Data Science and Artificial intelligence.",
+    "image": "https://raw.githubusercontent.com/dihcuierc/Personal_Website/main/public/assets/GameAnalysis.png",
+    "github": "https://github.com/dihcuierc/Game_Analysis",
+    "website": "",
+    "alt": "Game Analysis SC1015 Project Image",
+    "motivations": [
+      "As of 2021, there are over two billion gamers across the world, which is 26% of the world's population",
+      "In 2020, the gaming industry generated $155 billion in revenue, which is predicted to grow to more than $260 billion by 2025"
+    ],
+    "features": {
+      "Cleaning and Restructure": [
+        "basic data preparation, by removing columns contains NaN values",
+        "Restructuring from a Dataset having 583 Publisher to top 20 Publisher with the most number of sales",
+        "Removing presence big outlier, which belonged to the data for 'Wii Sports'."
+      ],
+      "Data Visual": [
+        "plotted Countplots for 'Publisher', 'Genre', 'Platform', 'Year of Release against Global Sales'",
+        "plotted Boxplots for 'Critic score', 'User score', 'Platform', 'Publisher', 'Genre', against Global Sales ",
+        "plotted Heat Map, showing the correlation between all the variables"
+      ],
+      "Linear Regression": [
+        "plotted Linear regression models 'Critic Score', 'User Score', 'Year of Release' and 'Critic Score with User Score' against Global Sales"
+      ],
+      "Random Forest Regression": [
+        "plotted non-linear regression using Random Forest regression"
+      ],
+      "Lasso, Ridge Regression, Importance Values": [
+        "plotted Lasso and Ridge regression",
+        "determined the importance of each subcategory('Genre', 'Publisher', 'Rating', 'Platform') and what games Game Creators should create"
+      ]
+    },
+    "libraries": ["Python", "Numpy", "Scikit-Learn", "Pandas ", "Seaborn"],
+    "conclusion": [
+      "Video game creators should create a simulation game as it would generate the highest global sales. They should also liaise with Nintendo as they have the highest probability of generating highest revenue and the game rating is recommended to be 'AO'(Adults Only). We also recommend that games be created on the PS2 or Wii platform as they are the more popular gaming platforms and would have the highest global sales.",
+      "However, we do note that these variables in the data set are not the only factors that can affect the sales of a video game. Factors such as advertisement, quality of the game and improvements in technology in the gaming industry, can help to boost the sales of the games greatly, which will hinder the effectiveness of our model."
+    ]
+  },
+  "2": {
+    "nav": "DecoderTool",
+    "title": "Decoder Tool",
+    "about": "Decoder Tool is an application to faciliate the translation of car error reports to a human readable data format for faster processing of error reports. This application was done while interning for Continental AG as a Software Engineer intern.",
+    "image": "https://raw.githubusercontent.com/dihcuierc/Personal_Website/main/public/assets/Decoder_Tool.jpg",
+    "github": "https://github.com/dihcuierc/Decoder_Tool",
+    "website": "",
+    "alt": "Decoder Tool Image",
+    "motivations": [],
+    "features": {},
+    "libraries": ["Python", "Openpxyl", "Tkinter"],
+    "conclusion": [
+      "Experienced working in an office environment",
+      "Understood Agile scrum methodology, having daily standups and the use of Jira for everyday tracking of work progress",
+      "Experienced the Software development lifecycle stages when creating software for customer",
+      "Collaborated with colleagues on Gerrit and Code-collaborators for code sharing and reviews",
+      "Developed software tools for automation to reduce time wasted on tedious work and made amendments based on customer's feedback"
+    ]
+  },
+  "3": {
+    "nav": "MOBLIMA",
+    "title": "MOBLIMA",
+    "about": "MOBLIMA is an application to computerize the processes of making online booking and purchase of movie tickets, listing of movies and sale reporting. This project is a module taken in NTU: SC2002 Object Oriented Design and Programming.",
+    "image": "https://raw.githubusercontent.com/dihcuierc/Personal_Website/main/public/assets/MOBLIMA.jpg",
+    "github": "https://github.com/dihcuierc/SC2002-MOBLIMA",
+    "website": "",
+    "alt": "MOBLIMA Project SC2002 Project Image",
+    "motivations": [],
+    "features": {
+      "Login": [
+        "Users are given the option to login as Customer, Cinema Staff, or to exit the application. Customers can either sign up as a new member or login with an existing account. Cinema Staff can only login with existing accounts."
+      ],
+      "Create/Update/Remove movie listing": [
+        "Cinema Staff is able to Create/Update/Remove Movie Listing. Cinema Staff can Display movie details, Add movie, Update movie or Remove movie."
+      ],
+      "Create/Update/Remove cinema showtimes and the movies to be shown": [
+        "Cinema Staff can Display movie show times, Add a movie show time, Update a movie show time or Remove a movie show time."
+      ],
+      "Configure top 5 listing criteria": [
+        "Cinema staff can configure sort the list of movies by Ticket Sales, Overall Ratings or by Ticket Sales and Overalls Ratings"
+      ],
+      "Change ticket price": [
+        "Cinema staff can edit the ticket pricing scheme"
+      ],
+      "Search/List movie": [
+        "Customer can view all available movies in the cinema.",
+        "The following details about the movie will be displayed: Movie Number, Title, Showing Status (E.g. #1, Black Adam, Now Showing)."
+      ],
+      "Check seat availability and selection of seat(s).": [
+        "When a customer decides to book a movie ticket, the seat layout will be printed, and booked/unavailable seats are indicated with an 'X'."
+      ],
+      "Book and purchase ticket": [
+        "Customers are able to select a movie and time and would receive a transactionID for their purchase."
+      ],
+      "View booking history": [
+        "Customers are able to view all the bookings that they have made."
+      ],
+      "Configuring a holiday date and the ticket price is shown correctly when booking is done on that date": [
+        "Cinema Staffs have the option to “Create/Update/Remove Ticket Pricing Scheme & Holiday” in the Cinema Staff main menu."
+      ],
+      "Configuring “End of Showing” date and the movie should not be listed for booking": [
+        "Cinema Staff have the option “Create/Update/Remove Movie Listing” in the Cinema Staff main menu where they can remove a movie by configuring it to “End of Showing” so that customers would not be able to book tickets for this movie"
+      ],
+      "Booking only allowed for “Preview” and “Now Showing” status.": [
+        "After a Cinema Staff configures the movie to “End of Showing”, Customers are not able to book tickets for this movie under “Book a movie ticket” option choices"
+      ]
+    },
+    "libraries": ["Java"],
+    "conclusion": [
+      "Learnt about Object Orientated Design and Programming.",
+      "Boundary, Control, Entity",
+      "Abstraction, Encapsulation, Inheritance, Polymorphism",
+      "Single Responsibility Principle (SRP), Open-Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Injection Principle (DIP)"
+    ]
+  },
+  "4": {
+    "nav": "TrainTogether",
+    "title": "Train Together",
+    "about": "TrainTogether is a full-stack web application that allows people to easy manage and plan their exercise activities, find the nearest exercise and food facility. The app is built using React, a JavaScript library for creating user interfaces. This project is a module taken in NTU: SC2006 Software Engineering.",
+    "image": "https://raw.githubusercontent.com/dihcuierc/Personal_Website/main/public/assets/CodingPigeonsSC2006.jpg",
+    "github": "https://github.com/dihcuierc/TrainTogether",
+    "website": "",
+    "alt": "Coding Pidgeons SC2006 Project Image",
+    "motivations": [
+      "TrainTogether aims to provide a platform for users to search for nearby fitness corners and customise an exercise plan based on its location and facilities.",
+      "Users can use TrainTogether to find the nearest fitness corner and access a wide range of pre-designed workout programs that are tailored to users' fitness level, goals and the facilities at the fitness corner.",
+      "At the same time, users can also use this web application to find restaurants that suit their fitness goals. "
+    ],
+    "features": {
+      "Register a user": [
+        "Our register page requires our users to enter their username, name, email address, password and confirm password, DOB, phone number, height, weight, gender and a profile picture.",
+        "Username must be at least 6 characters long. Password must contain at least 8 characters, consisting of one number, one uppercase, one lowercase and one number and a special character. DOB must be in DD/MM/YYYY format. Height must be in cm and Weight must be in kgs."
+      ],
+      "Login": [
+        "The login page requires users to input their email address and password. TrainTogether will check if the email address and password provided is accurate.",
+        "Users who do not have an account can click the Sign Up to be directed to the Register Page. Users who selected Forgot Password will be directed to the Forgot Password page."
+      ],
+      "Retrieve Password": [
+        "Users are able to input their email address so that a link will be sent to the user's email to prompt a change of password."
+      ],
+      "Dashboard Display": [
+        "The Dashboard Page displays the calories burnt by the user for the day, a bar chart showing the calories burnt throughout the month, Body Mass Index (BMI) Calculator and a Fitness Goal Dashboard."
+      ],
+      "Schedule Exercise": [
+        "Users can add, edit or delete a scheduled exercise plan.",
+        "Each scheduled exercise plan consist of a name, location and a date and time. The three dots provide users the option to edit or delete the scheduled exercise plan.",
+        "Users will be reminded of their scheduled exercise 1 hour in advance."
+      ],
+      "Exercise Plan": [
+        "Users can create their own customised set of exercise plans. An exercise plan includes the name of the exercise plan, a list of exercises.",
+        "Total calories burnt will be calculated based on the exercise plan."
+      ],
+      "Exercise": [
+        "Users are able to view the list of exercises available. Exercises include Arms, Back, Cardio, Core and Legs.",
+        "There are instructions and remarks for each of the exercises. Each exericse has an average rating out of 5 stars and users are able to view the reviews."
+      ],
+      "Review Exercise": [
+        "Users are able view the reviews of the exercise and are also able to add, edit or delete their own review of an exercise."
+      ],
+      "Exercise Facilities": [
+        "Google Map API is fetched together with Data.Gov.sg Api for the details of the fitness park available in Singapore. Users can make use of the search bar in the Google Map to search for the nearest fitness corner. ",
+        "Park details include Address, Postal code, Opening hours, Website of the park."
+      ],
+      "Food Facilities": [
+        "'Hungry Go Where' page consists of a Google Map API and the details of various food facility. Users can make use of the search bar in the Google Map to search for the nearest healthy food facility.",
+        "Users are able to filter the food facilities based on: Health Category, Food Type, Dining Guidelines Venue and Region.",
+        "Food facility details include Location address, Category of food, Type (Halal/Non-halal), Mode (Cafe etc)."
+      ],
+      "Settings": [
+        "Users are able to access the settings page which allows them to rename their username, update mobile number and email address, change their password, delete account and edit notifications settings."
+      ]
+    },
+    "libraries": [
+      "Reactjs",
+      "CSS",
+      "Firebase Realtime Database",
+      "Google Maps API",
+      "Data.gov API"
+    ],
+    "conclusion": []
+  },
+  "5": {
+    "nav": "ToDoList",
+    "title": "To-Do List",
+    "about": "Todo list allows users to input things that they would have to do in their lives. Features include Priority level, Category type, Search bar, Sort and Filter functionalities.",
+    "image": "https://raw.githubusercontent.com/dihcuierc/Personal_Website/main/public/assets/ToDoList.jpg",
+    "github": "https://github.com/dihcuierc/To-Do-List",
+    "website": "https://to-do-list-15bca.web.app/",
+    "alt": "Todo List Image",
+    "motivations": [],
+    "features": {
+      "Add Todo item": [
+        "Click on the 'Add' button, fill in the necessary inputs and click on 'Add' button to finalise input. (The Add Todo form will prompt for input should you leave out important details.) Your new Todo item will be added to the list of Todo items on the main page."
+      ],
+      "Remove a Todo item": [
+        "Click on the 'X' button at the bottom of each Todo item to remove the Todo item from the list."
+      ],
+      "Complete a Todo item": [
+        "Click on the 'Done' button at the bottom of each Todo item to mark the task as completed. The Todo item will have a strikethrough across the text."
+      ],
+      "Sort To-do items": [
+        "Todo items will be sorted based on priority level. User can choose the 'Ascending' or 'Descending' option."
+      ],
+      "Filter Todo items": [
+        "Todo items can be filtered for users look at a specific group of Todo items. User can choose to filter by 'Work', 'Personal', 'Home', 'Health & Fitness', 'Shopping' or 'Others'."
+      ],
+      "Search for a Todo item": [
+        "User can use the search bar to look for a specific Todo item. Search is based on the Todo item's title name only."
+      ]
+    },
+    "libraries": ["Reactjs", "CSS", "Firebase Realtime Database"],
+    "conclusion": [
+      "Learnt to create a web application using Reactjs and connecting it to Firebase Realtime database"
+    ]
+  },
+  "6": {
+    "nav": "StudentEngagement",
+    "title": "Student Engagement Prediction",
+    "about": "Project conducted when I was interning at Agency for Science, Technology and Research (A*STAR) Institute for Infocomm Research (I2R) as a Machine Learning Research Intern",
+    "image": "",
+    "github": "",
+    "website": "",
+    "alt": "Student Engagement Prediction",
+    "motivations": [
+      "Creating a model that would be able to detect student's engagement level in an online virtual environment (eg zoom)",
+      "To better facilitate student's learning especially in modern societies where most lectures and lessons are held online"
+    ],
+    "features": {},
+    "libraries": ["Python", "PyTorch", "Numpy", "Matplotlib", "Transformer"],
+    "conclusion": [
+      "Collaborated with team of researchers to proficiently operate advanced laboratory equipment, ensuring seamless experiments",
+      "Performed intensive research on the State-of-the-Art machine learning models available in the market, understanding the concepts used and rationale behind certain methods",
+      "Created baseline model with benchmark accuracy on the prediction of human emotions using PyTorch, demonstrating effective use of research and concepts learnt",
+      "Understanding various neural network architectures, optimised model and further improved prediction accuracy",
+      "Utilised human emotion prediction model to predict student's engagement rate in an online classroom environment, pioneered the first machine learning model to predict student's engagement"
+    ]
+  }
+}

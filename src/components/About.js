@@ -15,37 +15,42 @@ export default function About() {
     "SQL, NoSQL",
   ];
 
+  const intro = (
+    <div>
+      <p>
+        Hello, I am Lee Yen Foong Ernest, currently in my third year of studying
+        Computer Science at Nanyang Technological University. My journey in the
+        world of technology has been an exciting one, and I am filled with
+        enthusiasm and determination to become a Software Engineer in the
+        future.
+      </p>
+      <p>
+        In the rapidly evolving field of computer science, I see each day as an
+        opportunity to learn and grow. I thrive on challenges that test my
+        problem-solving abilities, and I actively seek out projects and
+        experiences that push me to greater heights. Whether it is diving into a
+        complex coding challenge or exploring innovative technologies, I am
+        always eager to expand my horizons and stay at the forefront of the
+        technological industry.
+      </p>
+      <p>
+        Beyond the realm of code and algorithms, I lead an active lifestyle. I
+        find immense joy in activities that keep me physically engaged. Running
+        is not just a form of exercise for me; it is a source of inspiration and
+        a way to clear my mind. Additionally, I have a passion for playing
+        floorball.
+      </p>
+    </div>
+  );
+
   return (
     <div className={classes.card}>
       <Card className={classes.aboutBoard}>
         <Card.Title className={classes.contentTitle}>
           About me <InfoIcon fontSize="large" />
         </Card.Title>
-        <Card.Body className={classes.aboutText}>
-          <p>
-            Hello, I am Lee Yen Foong Ernest, currently in my third year of
-            studying Computer Science at Nanyang Technological University. My
-            journey in the world of technology has been an exciting one, and I
-            am filled with enthusiasm and determination to become a Software
-            Engineer in the future.
-          </p>
-          <p>
-            In the rapidly evolving field of computer science, I see each day as
-            an opportunity to learn and grow. I thrive on challenges that test
-            my problem-solving abilities, and I actively seek out projects and
-            experiences that push me to greater heights. Whether it's diving
-            into a complex coding challenge or exploring innovative
-            technologies, I am always eager to expand my horizons and stay at
-            the forefront of the tech industry.
-          </p>
-          <p>
-            Beyond the realm of code and algorithms, I lead an active lifestyle.
-            I find immense joy in activities that keep me physically engaged.
-            Running is not just a form of exercise for me; it's a source of
-            inspiration and a way to clear my mind. Additionally, I have a
-            passion for playing floorball.
-          </p>
-        </Card.Body>
+        <Card.Body className={classes.aboutText}>{intro}</Card.Body>
+
         <Card.Title className={classes.contentTitle}>
           Skills &amp; Technologies <HandymanIcon fontSize="large" />
         </Card.Title>

@@ -1,0 +1,57 @@
+.card {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsBoard {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #2c0093);
+  min-height: 300px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+
+.contentTitle {
+  font-size: 2rem;
+  color: white;
+}
+
+.container {
+  box-shadow: 4px 4px 16px rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5%;
+  transition: transform 0.2s;
+  height: 90%;
+  width: 90%;
+}
+
+.container:hover {
+  background-color: #7358b4;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px #000000;
+}
+
+.title {
+  color: rgb(97, 181, 255);
+}
+
+.about {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}
